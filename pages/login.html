@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>DNS Аукцион</title>
+</head>
+<body>
+<div class="page-wrapper">
+    <header class="main-header">
+        <div class="main-header__container container">
+            <h1 class="visually-hidden">YetiCave</h1>
+            <a class="main-header__logo" href="../index.php">
+                <img src="../img/dns-logo-set.png" height="90" alt="Логотип компании DNS Аукцион">
+            </a>
+            <div>
+                <a class="main-header__add-lot button" href="../add.php">Добавить лот</a>
+            </div>
+            <nav class="user-menu">
+                <ul class="user-menu__list">
+                    <li class="user-menu__item">
+                        <a href="sign-up.php">Регистрация</a>
+                    </li>
+                    <li class="user-menu__item">
+                        <a href="login.php">Вход</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <form class="form container" action="https://echo.htmlacademy.ru" method="post"> <!-- form--invalid -->
+            <h2>Вход</h2>
+            <div class="form__item"> <!-- form__item--invalid -->
+                <label for="email">E-mail <sup>*</sup></label>
+                <input id="email" type="text" name="email" placeholder="Введите e-mail">
+                <span class="form__error">Введите e-mail</span>
+            </div>
+            <div class="form__item form__item--last">
+                <label for="password">Пароль <sup>*</sup></label>
+                <input id="password" type="password" name="password" placeholder="Введите пароль">
+                <span class="form__error">Введите пароль</span>
+            </div>
+            <button type="submit" class="button">Войти</button>
+        </form>
+    </main>
+</div>
+</body>
+</html>

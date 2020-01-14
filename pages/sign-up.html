@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>DNS Аукцион</title>
+</head>
+<body>
+<div class="page-wrapper">
+    <header class="main-header">
+        <div class="main-header__container container">
+            <h1 class="visually-hidden">YetiCave</h1>
+            <a class="main-header__logo" href="../index.php">
+                <img src="../img/dns-logo-set.png" height="90" alt="Логотип компании DNS Аукцион">
+            </a>
+            <div>
+                <a class="main-header__add-lot button" href="../add.php">Добавить лот</a>
+            </div>
+            <nav class="user-menu">
+                <ul class="user-menu__list">
+                    <li class="user-menu__item">
+                        <a href="sign-up.php">Регистрация</a>
+                    </li>
+                    <li class="user-menu__item">
+                        <a href="login.php">Вход</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <form class="form container form--invalid" action="https://echo.htmlacademy.ru" method="post" autocomplete="off"> <!-- form
+    --invalid -->
+            <h2>Регистрация нового аккаунта</h2>
+            <div class="form__item"> <!-- form__item--invalid -->
+                <label for="email">E-mail <sup>*</sup></label>
+                <input id="email" type="text" name="email" placeholder="Введите e-mail">
+                <span class="form__error">Введите e-mail</span>
+            </div>
+            <div class="form__item">
+                <label for="password">Пароль <sup>*</sup></label>
+                <input id="password" type="password" name="password" placeholder="Введите пароль">
+                <span class="form__error">Введите пароль</span>
+            </div>
+            <div class="form__item">
+                <label for="name">Имя <sup>*</sup></label>
+                <input id="name" type="text" name="name" placeholder="Введите имя">
+                <span class="form__error">Введите имя</span>
+            </div>
+            <div class="form__item">
+                <label for="message">Контактные данные <sup>*</sup></label>
+                <textarea id="message" name="message" placeholder="Напишите как с вами связаться"></textarea>
+                <span class="form__error">Напишите как с вами связаться</span>
+            </div>
+            <span class="form__error form__error--bottom">Пожалуйста, исправьте ошибки в форме.</span>
+            <button type="submit" class="button">Зарегистрироваться</button>
+            <a class="text-link" href="#">Уже есть аккаунт</a>
+        </form>
+    </main>
+</div>
+</body>
+</html>

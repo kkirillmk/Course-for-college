@@ -13,12 +13,14 @@ $sql = "SELECT  `lots`.`id`, `lots`.`name`,
                 MAX(`bets`.`bet_sum`) AS `current_price`,
                 cats.`name`  AS `category`, 
                 `date_end`, `description`, `bet_step`,
-                `id_author`
+                `id_author`, `users`.`name` AS name_author
         FROM `lots`
                 LEFT JOIN `bets` 
                     ON `bets`.`id_lot` = `lots`.`id`
                 JOIN `categories` cats 
                     ON cats.`id` = `lots`.`id_category`
+                JOIN `users`
+                    ON `lots`.`id_author` = `users`.`id`
 
         WHERE `lots`.`id` = '$id_lot'";
 $lots = sqlToArray($sql_connect, $sql);

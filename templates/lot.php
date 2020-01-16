@@ -5,6 +5,7 @@
             <div class="lot-item__image">
                 <img src="<?= $lots[0]["img"]; ?>" width="730" height="548" alt="">
             </div>
+            <p class="lot__category">Автор лота: <?= $lots[0]["name_author"]; ?></p>
             <p class="lot-item__category">Категория: <span><?= $lots[0]["category"]; ?></span></p>
             <p class="lot-item__description"><?= htmlspecialchars($lots[0]["description"]); ?></p>
         </div>

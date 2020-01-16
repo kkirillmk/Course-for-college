@@ -25,7 +25,7 @@
                 <?php if (!empty($_SESSION)): ?>
                     <div class="user-menu__logged">
                         <p><?= htmlspecialchars($_SESSION["user"]["name"]); ?></p>
-<!--                        <a class="user-menu__bets" href="../my-bets.php">Мои ставки</a>-->
+                        <a class="user-menu__bets" href="../my-bets.php">Мои ставки</a>
                         <a class="user-menu__logout" href="../logout.php">Выход</a>
                     </div>
                 <?php else: ?>

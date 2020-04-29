@@ -77,7 +77,7 @@
                     <a class="main-header__add-lot button" href="../add.php">Добавить лот</a>
                 </div>
             <?php endif; ?>
-            <img src="../img/footer-logo.png" alt="footer-logo" height="77px">
+            <img src="../img/dns.svg" alt="footer-logo" height="50px">
         </div>
     </footer>
 </div>

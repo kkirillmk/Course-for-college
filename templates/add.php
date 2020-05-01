@@ -14,7 +14,7 @@
         <div class="form__item <?= $classname; ?>">
             <label for="category">Категория <sup>*</sup></label>
             <select id="category" name="category">
-                <option>Выберите категорию</option>
+                <option disabled selected>Выберите категорию</option>
                 <?php foreach ($categories as $category): ?>
                     <option value="<?= $category["id"] ?>"
                         <?php if ($category["id"] === getPostVal("category")): ?> selected <?php endif; ?>>
@@ -35,11 +35,12 @@
     <div class="form__item form__item--file <?= $classname; ?>">
         <label>Изображение <sup>*</sup></label>
         <div class="form__input-file <?= $classname; ?>">
-            <input class="visually-hidden" type="file" id="lot-img" name="lot-img" value="">
+            <input class="visually-hidden" type="file" id="lot-img" name="lot-img" onchange="getFileName();">
             <label for="lot-img">
                 Добавить
             </label>
         </div>
+        <div id="file-name"></div>
     </div>
     <div class="form__container-three">
         <?php $classname = isset($errors["lot-rate"]) ? "form__item--invalid" : ""; ?>
@@ -73,3 +74,10 @@
     </ul>
     <button type="submit" class="button">Добавить лот</button>
 </form>
+<script>
+    function getFileName () {
+        let file = document.getElementById('lot-img').value;
+        file = file.replace(/\\/g, "/").split('/').pop();
+        document.getElementById('file-name').innerHTML = 'Имя файла: ' + file;
+    }
+</script>

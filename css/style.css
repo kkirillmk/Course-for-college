@@ -1248,3 +1248,7 @@ input:invalid .form__error{
 .rates__item--end {
   opacity: 0.4;
 }
+
+.button.red {
+  background-color: #ff4146;
+}

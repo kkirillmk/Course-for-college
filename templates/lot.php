@@ -62,6 +62,14 @@
                             <button type="submit" class="button">Сделать ставку</button>
                         </form>
                     <?php endif; ?>
+                    <?php if ($_SESSION && $lots[0]["id_author"] === $_SESSION["user"]["id"]): ?>
+                        <?php $classname = empty($errors) ? "" : "form--invalid"; ?>
+                        <form class="lot-item__form <?= $classname; ?>"
+                          action="../lot-delete.php?id=<?= htmlspecialchars($_GET["id"]); ?>"
+                          method="post" autocomplete="off">
+                            <button type="submit" class="button red">Удалить лот</button>
+                        </form>
+                    <?php endif; ?>
                 <?php endif; ?>
             </div>
             <div class="history">

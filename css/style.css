@@ -806,7 +806,7 @@ p .lot__category {
 }
 
 .form__item--last {
-  margin-bottom: 65px;
+  margin-bottom: 10px;
 }
 
 .form .button {
@@ -1252,3 +1252,8 @@ input:invalid .form__error{
 .button.red {
   background-color: #ff4146;
 }
+
+.button.red:hover {
+  background-color: #ff7674;
+}
+

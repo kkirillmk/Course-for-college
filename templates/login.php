@@ -15,6 +15,9 @@
                value="<?= getPostVal("password") ?>">
         <span class="form__error">Введите пароль</span>
     </div>
+    <a href="../forgot-password.php" class="text-link">Забыли пароль?</a>
+    <br>
+    <br>
     <button type="submit" class="button">Войти</button>
     <br>
     <br>

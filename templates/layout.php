@@ -48,7 +48,7 @@
     <footer class="main-footer">
         <div class="main-footer__bottom container">
             <div class="main-footer__copyright">
-                <p>© 2019-2020, Морозов Кирилл</p>
+                <p>© К. Ю. Морозов, 2019-2020</p>
                 <p>Интернет-аукцион цифровой и бытовой техники</p>
             </div>
             <div class="main-footer__social social">
